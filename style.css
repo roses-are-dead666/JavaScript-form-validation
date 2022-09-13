@@ -1,0 +1,117 @@
+body {
+    background: #1b2430;
+    margin: 0;
+    padding: 0;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+.container {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 100%;
+}
+
+.formCard {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    width: 500px;
+}
+
+.header {
+    text-align: center;
+    border-bottom: 1px solid #000;
+    padding: 20px;
+}
+
+.form {
+    padding: 30px;
+}
+
+.formControl {
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+.formControl.success input {
+    border-color: #2ecc71;
+}
+
+.formControl.error input {
+    border-color: #e74c3c;
+}
+
+.formControl label {
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.formControl input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    display: block;
+    outline: none;
+}
+
+.formControl i {
+    visibility: hidden;
+    position: absolute;
+    top: 35px;
+    right: 10px;
+}
+
+.formControl.success i.fa-check-circle {
+    visibility: visible;
+    color: #2ecc71;
+}
+
+.formControl.error i.fa-exclamation-circle {
+    visibility: visible;
+    color: #e74c3c;
+}
+
+.formControl small {
+    visibility: hidden;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.formControl.error small {
+    visibility: visible;
+    color: #e74c3c;
+}
+
+.form button {
+    width: 100%;
+    display: block;
+    background-color: #1b2430;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: .1s linear;
+}
+
+.form button:hover {
+    background-color: transparent;
+    color: #1b2430;
+}
